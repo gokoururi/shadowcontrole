@@ -1,0 +1,47 @@
+{
+    "details": {
+        "name": "Erik Wächter",
+        "race": "Mensch",
+        "age": 23
+    },
+    "attributes": {
+        "strength": {
+            "value": 1
+        },
+        "reaction": {
+            "value": 2
+        },
+        "constitution": {
+            "value": 3
+        },
+        "dexterity": {
+            "value": 4
+        },
+        "intuition": {
+            "value": 5
+        },
+        "charisma": {
+            "value": 6
+        },
+        "willpower": {
+            "value": 7
+        },
+        "logic": {
+            "value": 8
+        },
+        "edge": {
+            "current": 2,
+            "value": 9
+        },
+        "essence": {
+            "value": 10
+        }
+    },
+    "skills": {
+        "Bodenfahrzeuge": {
+            "value": 1,
+            "group": "Fahrzeuge",
+            "attribute": "logic"
+        }
+    }
+}

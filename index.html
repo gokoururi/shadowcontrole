@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Shadow Control</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+  </head>
+  <body>
+    <container>
+      <left-pane>
+          <div class="charactersheet">
+          </div>
+          <div class="health">
+            <div id="hK">
+              <div class="healthbar good active"></div>
+              <div class="healthbar good"></div>
+              <div class="healthbar good"></div>
+              <div class="healthbar good"></div>
+              <div class="healthbar good"></div>
+              <div class="healthbar good"></div>
+              <div class="healthbar ko"></div>
+              <div class="healthbar ko"></div>
+              <div class="healthbar ko"></div>
+              <div class="healthbar dead"></div>
+            </div>
+            <div id="hK">
+              <div class="healthbar good active"></div>
+              <div class="healthbar good"></div>
+              <div class="healthbar good"></div>
+              <div class="healthbar good"></div>
+              <div class="healthbar ko"></div>
+              <div class="healthbar ko"></div>
+              <div class="healthbar ko"></div>
+              <div class="healthbar dead"></div>
+            </div>
+          </div>
+      </left-pane>
+      <top-pane>
+        <button class="large">Fertigkeiten</button>
+        <button class="large active">Ausrüstung</button>
+        <button class="large">Kampf Assistent</button>
+      </top-pane>
+      <main-pane></main-pane>
+    </container>
+    <script>
+        const Character = require('./js/character');
+        const statblock = require('./js/statblock');
+        const character = new Character('data/character.json');
+        statblock.print(character, ".charactersheet");
+    </script>
+  </body>
+</html>

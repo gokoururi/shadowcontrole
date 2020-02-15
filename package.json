@@ -1,0 +1,17 @@
+{
+  "name": "shadowcontrol",
+  "version": "0.0.1",
+  "description": "Shadowrun support program",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "shadowrun"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.0.0"
+  }
+}
