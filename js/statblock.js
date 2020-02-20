@@ -90,14 +90,16 @@ function print(char, elem) {
     for (var [key, attributeGroup] of Object.entries(character.attributeGroups)) {
         innerHTML += sheetRowHeading(attributeGroup.display)
         for (var [key, attribute] of Object.entries(attributeGroup.attributes)) {
-            innerHTML += sheetRow(key, attribute.display, attribute.value);
+            innerHTML += sheetRow(key, attribute.display, attribute.value, false);
         }
     }
+    /*
     innerHTML += '<tr><th colspan="3"><div class="buttonrow">';
     innerHTML += '<button id="edit" class="large">Edit</button>';
     innerHTML += '<button id="save" class="large edithidden">Save</button>';
     innerHTML += '<button id="cancel" class="large edithidden">Cancel</button>';
     innerHTML += '</div></th></tr>';
+    */
     innerHTML += sheetRowHeading("Limits");
     innerHTML += sheetRow("x", "Körperlich", char.limits().body, false);
     innerHTML += sheetRow("x", "Geistig", char.limits().mind, false);
@@ -106,9 +108,9 @@ function print(char, elem) {
     innerHTML += sheetRow("x", "Initiative", 2, false);
     innerHTML += sheetRow("x", "Heben/Tragen", 2, false);
     innerHTML += sheetRow("x", "Laufen/Rennen", 2, false);
-    innerHTML += sheetRow("x", "Menschenkenntnis", 2, false);
-    innerHTML += sheetRow("x", "Selbstbeherrschung", 2, false);
-    innerHTML += sheetRow("x", "Erinnrungsvermögen", 2, false);
+    innerHTML += sheetRow("x", "Menschenk.", 2, false);
+    innerHTML += sheetRow("x", "Selbstbeh.", 2, false);
+    innerHTML += sheetRow("x", "Erinnrungsv.", 2, false);
     innerHTML += '</table>';
     element.innerHTML = innerHTML;
 

@@ -18,7 +18,7 @@ function createWindow(width, height, file, parent = null) {
 // initialization and is ready to create browser windows.
 // Einige APIs können nur nach dem Auftreten dieses Events genutzt werden.
 app.whenReady().then(() => {
-  mainWindow = createWindow(1000, 1000, 'index.html')
+  mainWindow = createWindow(1000, 1200, 'index.html')
 
 })
 
