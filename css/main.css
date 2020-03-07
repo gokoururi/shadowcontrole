@@ -5,7 +5,7 @@
 body {
     background: #222 ;
     color: var(--highlite);
-    font-family: verdana;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 container {
@@ -68,15 +68,15 @@ main-pane {
 .charactersheet td {
     background: var(--highlite);
     color: #222;
-    font-weight: bold;
     margin: 0px;
     padding: 0 5px;
 }
 
 .charactersheet th.colspan {
     padding-top: 10px;
-    text-align: center;
-    border-bottom: 5px solid var(--highlite);
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px dashed var(--highlite);
 }
 
 .charactersheet .buttonrow {
@@ -87,17 +87,14 @@ main-pane {
   align-items: center;
 }
 
-
-
 button.small {
     /*
     margin-left: 10px;
     */
-    margin: 5px;
+    margin: 2px;
     width: 30px;
     height: 30px;
     background: #393939;
-    border: 0px;
     border: 1px solid black;
     color: #777;
     cursor: pointer;
